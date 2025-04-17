@@ -1,27 +1,37 @@
 body {
-    background-image: linear-gradient(to right, blue 0%, white 20%, white 80%, blue 100%);
+    /*background-image: linear-gradient(to right, #00796b 0%, #fafafa 30%, #FAFAFA 70%, #00796B 100%);*/
+    background: radial-gradient(circle, #ffffff 0%, #a8edea 155%);
     text-align: center;
 }
 
-header {
+.Logo_and_title img {
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.Logo_and_title header {
     /*background-image: linear-gradient(to right, blue 0%, white 30%, white 70%, blue 100%);*/
     color: black;
     padding-top: 10px;
     padding-bottom: 5px;
     font-size: 75px;
     text-align: center;
+    display: flex;
 }
+
 
 nav {
     text-align: center;
     position: relative;
     /*background-image: linear-gradient(to right, blue 0%, white 30%, white 70%, blue 100%);*/
     padding: 5px;
+    background-color: darkslategray;
 }
 
 nav ul {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     border-radius: 25px;
     margin-left: 175px;
@@ -34,12 +44,11 @@ nav li {
     list-style: none;
     font-size: 20px;
     border-radius: 25px;
-    background-color: black;
+    background-color: #b0bec5;
     width: 150px;
     height: 30px;
 }
 
 nav li a {
-    color: white;
+    color: black;
 }
-
