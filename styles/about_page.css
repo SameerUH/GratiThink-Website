@@ -6,7 +6,6 @@ body {
     font-family: Cambria;
 }
 
-
 .Logo_and_nav {
     flex-direction: row;
     display: flex;
@@ -17,15 +16,6 @@ body {
     width: 125px;
     height: auto;
     padding: 5px;
-}
-
-header {
-    /*background-image: linear-gradient(to right, blue 0%, white 30%, white 70%, blue 100%);*/
-    color: black;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    font-size: 75px;
-    text-align: center;
 }
 
 nav {
@@ -65,41 +55,6 @@ nav li {
 nav li a {
     text-decoration: none;
     border-radius: 25px;
-    color: black;
     display: block;
-}
-
-
-main {
-    width: 1000px;
-    margin: 0 auto;
-    flex-direction: row;
-    display: flex;
-    margin-top: 50px;
-}
-
-main img {
-    width: auto;
-    height: 300px;
-    border-style: solid;
-    border-color: #a8edea;
-}
-
-main .maintext {
-    flex-direction: column;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: justify;
-    font-size: large;
-}
-
-h2 {
-    font-size: 50px;
-}
-
-footer {
-    background-color: #004d40	;
-    padding: 20px;
-    color: white;
-    font-size: large;
+    color: black;
 }
