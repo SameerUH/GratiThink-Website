@@ -1,8 +1,8 @@
 body {
     /*background-image: linear-gradient(to right, #00796b 0%, #fafafa 30%, #FAFAFA 70%, #00796B 100%);*/
     background: radial-gradient(circle, #ffffff 0%, #a8edea 155%);
-    text-align: center;
     margin: 0px;
+    text-align: center;
     font-family: Cambria;
 }
 
@@ -19,7 +19,6 @@ body {
 }
 
 nav {
-    text-align: center;
     position: relative;
     /*background-image: linear-gradient(to right, blue 0%, white 30%, white 70%, blue 100%);*/
     padding: 1px;
@@ -57,4 +56,43 @@ nav li a {
     border-radius: 25px;
     display: block;
     color: black;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    margin: auto 0;
+    justify-content: center;
+    gap: 40px;
+}
+
+.team .role {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+main p {
+    margin: 0 auto;
+    max-width: 500px;
+    justify-content: center;
+    font-size: medium;
+}
+
+.centeredlist {
+    margin: 0 auto;
+    max-width: 400px;
+    list-style-position: outside;
+    justify-content: center;
+}
+
+.centeredlist li {
+    text-align: left;
+}
+
+footer {
+    background-color: #004d40;
+    padding: 20px;
+    color: white;
+    font-size: large;
 }
