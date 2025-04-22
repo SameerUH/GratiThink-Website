@@ -1,5 +1,5 @@
 <div class="Logo_and_nav">
-    <img src="../images/Gratithink logo without background.png" alt="Gratithink Logo">
+    <img src="images/Gratithink logo without background.png" alt="Gratithink Logo">
     
     <nav>
         <ul>

@@ -1,5 +1,5 @@
 <?php
-    include "../includes/head_fragment.php";
+    include "includes/head_fragment.php";
     $title = "About";
     $content = "about_page";
     echo head_fragment($title, $content);
@@ -7,7 +7,7 @@
 
 <body>
     <?php
-        include "../includes/navbar_fragment.php";
+        include "includes/navbar_fragment.php";
     ?>
 
     <main>
@@ -50,7 +50,7 @@
     <br><br>
     
     <?php
-        include "../includes/footer_fragment.php";
+        include "includes/footer_fragment.php";
     ?>
 </body>
 </html>

@@ -5,7 +5,7 @@ Short to-do list:
 !-->
 
 <?php
-    include "../includes/head_fragment.php";
+    include "includes/head_fragment.php";
     $title = "Home";
     $content = "index_page";
     echo head_fragment($title, $content);
@@ -14,7 +14,7 @@ Short to-do list:
 <body>
 
     <?php
-    include "../includes/navbar_fragment.php";
+    include "includes/navbar_fragment.php";
     ?>
 
     <header><u>GratiThink</u></header>
@@ -22,7 +22,7 @@ Short to-do list:
     <h2>STRESS LESS | START TRACKING</h2>
 
     <main>
-        <img src="../images/phone with journal.jpg" alt = "phone with journal">
+        <img src="images/phone with journal.jpg" alt = "phone with journal">
 
         <div class="maintext">
 
@@ -30,14 +30,14 @@ Short to-do list:
         </p>
         </div>
 
-        <img src="../images/habit tracker.jpg" alt="habit tracker">
+        <img src="images/habit tracker.jpg" alt="habit tracker">
 
     </main>
 
     <br><br><br>
 
     <?php
-        include "../includes/footer_fragment.php";
+        include "includes/footer_fragment.php";
     ?>
 </body>
 
