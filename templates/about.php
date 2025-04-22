@@ -1,30 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="../styles/about_page.css">
-    <title>GratiThink</title>
-</head>
+<?php
+    include "../includes/head_fragment.php";
+    $title = "About";
+    $content = "about_page";
+    echo head_fragment($title, $content);
+?>
 
 <body>
-    <div class="Logo_and_nav">
-    <img src="../images/Gratithink logo without background.png" alt="Gratithink Logo">
-    
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="credits.html">Credits</a></li>
-            </ul>
-        </nav>
-    </div>
+    <?php
+        include "../includes/navbar_fragment.php";
+    ?>
 
     <main>
         <h3><i><u>Inspiration:</u></i></h3>
 
         <p>Growing up I had issues with balancing education and other committments and as time went by and exams came closer, I lost motivation and concentration with my studies. After doing research and reading into techniques and books I have found methods to help with motivation by doing little by little per day and celebrating/reflecting on past revision to help motivate future sessions.<br><br>I decided to make this app implementing those methods and techniques to help myself and others with their future studies.</p>
+        <br>
 
         <h3><i><u>Features:</u></i></h3>
         <ul class="centeredlist">
@@ -58,8 +48,9 @@
 
     </main>
     <br><br>
-    <footer>
-        <p>&copy; Gratithink Sameer Haq, 2025</p>
-    </footer>
+    
+    <?php
+        include "../includes/footer_fragment.php";
+    ?>
 </body>
 </html>
