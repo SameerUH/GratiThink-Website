@@ -1,5 +1,4 @@
 body {
-    /*background-image: linear-gradient(to right, #00796b 0%, #fafafa 30%, #FAFAFA 70%, #00796B 100%);*/
     background: radial-gradient(circle, #ffffff 0%, #a8edea 155%);
     text-align: center;
     margin: 0px;
@@ -21,7 +20,6 @@ body {
 .Logo_and_nav nav {
     text-align: center;
     position: relative;
-    /*background-image: linear-gradient(to right, blue 0%, white 30%, white 70%, blue 100%);*/
     padding: 1px;
     margin-left: 40%;
 }
@@ -64,4 +62,17 @@ footer {
     padding: 20px;
     color: white;
     font-size: large;
+}
+
+#timed {
+    display: flex;
+    border-style: solid;
+    border-radius: 25px;
+    border-color:#004d40;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+    justify-content: center;
+    flex-direction: column;
 }

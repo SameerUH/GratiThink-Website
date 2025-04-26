@@ -10,7 +10,10 @@
         include "includes/navbar_fragment.php";
     ?>
 
-    <div id = 'timed'></div>
+    <br><br>
+
+    <h1>Top Reviews:</h1>
+    <div id = "timed"></div>
 
     <nav>
         <ul>

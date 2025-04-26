@@ -7,6 +7,7 @@ window.addEventListener('load', function() {
 
         document.getElementById('timed').innerHTML = '<h2>' + fivestars[i].review_title + '</h2>';
         document.getElementById('timed').innerHTML += '<p>' + fivestars[i].review_content + '</p>';
+        document.getElementById('timed').innerHTML += '<p>' + fivestars[i].stars + '</p>';
     }
 
     const URL = 'data/reviews.json';
@@ -22,7 +23,7 @@ window.addEventListener('load', function() {
                 const fivestars = json.filter(review => review.stars === 5);
                 setInterval(function() {
                     timedReviews(fivestars);
-                }, 3000);
+                }, 5000);
             }
         )
         .catch(
