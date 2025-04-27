@@ -63,3 +63,52 @@ footer {
     color: white;
     font-size: large;
 }
+
+#timed {
+    display: flex;
+    border-style: solid;
+    border-radius: 25px;
+    border-color:#004d40;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+#rating {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 1000px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+#rating li {
+    border-style: solid;
+    background-color: green;
+    font-size: 30px;
+    width: 100px;
+}
+
+#reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#reviews .box {
+    border-style: solid;
+    border-radius: 15px;
+    background-color: white;
+    color: #001a33;
+    border-image: linear-gradient(to bottom, darkslategray 0%, darkcyan 100%) 1;
+    font-size: 20px;
+}

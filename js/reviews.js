@@ -21,7 +21,7 @@ window.addEventListener('load', function() {
     document.getElementById('All').addEventListener('click', function(){
         displayReviews(reviews);
     })
-
+    
     function displayReviews(json, stars) {
         if (stars) {
             json = json.filter(function(review) {
@@ -30,14 +30,18 @@ window.addEventListener('load', function() {
         }
         
         let reviews = json.map(function(review) {
-            return '<h2>' + review.review_title + '</h2>' + '<p>' + review.review_content + '<p></p>' + review.stars + '</p>';
+            let numofstars = '';
+            for (let i = 0; i < review.stars; i++) {
+                numofstars += '⭐';
+            }
+            return '<div class = "box">' + '<h2><u>' + review.review_title + '</u></h2>' + '<p>' + review.review_content + '<p></p>' + numofstars + '</p>' + '</div>';
         });
 
-        document.getElementById('app').innerHTML = reviews.join('');
+        document.getElementById('reviews').innerHTML = reviews.join('');
     }
 
     const URL = "data/reviews.json";
-    
+
     fetch(URL)
         .then(
             function(response){

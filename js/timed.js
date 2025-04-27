@@ -7,7 +7,7 @@ window.addEventListener('load', function() {
 
         document.getElementById('timed').innerHTML = '<h2>' + fivestars[i].review_title + '</h2>';
         document.getElementById('timed').innerHTML += '<p>' + fivestars[i].review_content + '</p>';
-        document.getElementById('timed').innerHTML += '<p>' + fivestars[i].stars + '</p>';
+        document.getElementById('timed').innerHTML += '<p> ⭐⭐⭐⭐⭐</p>';
     }
 
     const URL = 'data/reviews.json';

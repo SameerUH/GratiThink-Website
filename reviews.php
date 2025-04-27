@@ -16,12 +16,7 @@
     <div id = "timed"></div>
     <br><br>
 
-    <h1>Top Reviews:</h1>
-    <div id = "timed"></div>
-
-    <br>
-    <br>
-    <ul id = "rating">
+    <ul id = 'rating'>
         <li id = "All">All</li>
         <li id = "1 star">1 Star</li>
         <li id = "2 star">2 Star</li>
@@ -30,9 +25,13 @@
         <li id = "5 star">5 Star</li>
     </ul>
 
-    <div id = 'app'></div>
+    <br><br>
 
-    <script src="js/app.js"></script>
+    <div id = 'reviews'></div>
+
+    <br><br>
+
+    <script src="js/reviews.js"></script>
     <script src="js/timed.js"></script>
 
     <?php
