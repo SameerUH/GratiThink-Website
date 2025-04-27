@@ -63,30 +63,3 @@ footer {
     color: white;
     font-size: large;
 }
-
-#timed {
-    display: flex;
-    border-style: solid;
-    border-radius: 25px;
-    border-color:#004d40;
-    background-color: white;
-    width: 80%;
-    margin: 0 auto;
-    height: 200px;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#rating {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    width: 500px;
-}
-
-#rating li {
-    border-style: solid;
-    background-color: green;
-    list-style-type: none;
-    margin: 0 auto;
-}
