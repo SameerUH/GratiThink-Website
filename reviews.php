@@ -10,18 +10,21 @@
         include "includes/navbar_fragment.php";
     ?>
 
-    <div id = 'timed'></div>
+    <br><br>
 
-    <nav>
-        <ul>
-            <li id = "All">All</li>
-            <li id = "1 star">1 Star</li>
-            <li id = "2 star">2 Star</li>
-            <li id = "3 star">3 Star</li>
-            <li id = "4 star">4 Star</li>
-            <li id = "5 star">5 Star</li>
-        </ul>
-    </nav>
+    <h1>Top Reviews:</h1>
+    <div id = "timed"></div>
+
+    <br>
+    <br>
+    <ul id = "rating">
+        <li id = "All">All</li>
+        <li id = "1 star">1 Star</li>
+        <li id = "2 star">2 Star</li>
+        <li id = "3 star">3 Star</li>
+        <li id = "4 star">4 Star</li>
+        <li id = "5 star">5 Star</li>
+    </ul>
 
     <div id = 'app'></div>
 
