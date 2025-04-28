@@ -1,7 +1,8 @@
 <div class="Logo_and_nav">
-    <img src="images/Gratithink logo without background.png" alt="Gratithink Logo">
-
-    <header>GratiThink</header>
+    <div class="logo_header_group">
+        <img src="images/Gratithink logo without background.png" alt="Gratithink Logo">
+        <header>GratiThink</header>
+    </div>
 
     <nav>
         <ul>

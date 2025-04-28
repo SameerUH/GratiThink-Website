@@ -34,7 +34,19 @@ window.addEventListener('load', function() {
             for (let i = 0; i < review.stars; i++) {
                 numofstars += '⭐';
             }
-            return '<div class = "box">' + '<h2><u>' + review.review_title + '</u></h2>' + '<p>' + review.review_content + '<p></p>' + numofstars + '</p>' + '</div>';
+
+            if (review.review_content == "") {
+                review.review_content = "Information not included"
+            }
+
+            if (review.user.name == "") {
+                review.user.name = "Anonymous"
+            }
+
+            if (review.user.location == "") {
+                review.user.location = "N/A"
+            }
+            return '<div class = "box">' + '<h2><u>' + review.review_title + '</u></h2>' + '<p>' + review.review_content + '<p></p>' + numofstars + '</p>' +  '<p>' + review.user.name + ' | ' + review.user.location + ' | ' + review.date + '</p>' + '</div>';
         });
 
         document.getElementById('reviews').innerHTML = reviews.join('');

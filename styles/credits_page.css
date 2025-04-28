@@ -7,9 +7,12 @@ body {
 }
 
 .Logo_and_nav {
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     background-color: darkslategray;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .Logo_and_nav img {
@@ -18,32 +21,31 @@ body {
     padding: 5px;
 }
 
-nav {
+.Logo_and_nav nav {
     text-align: center;
-    position: relative;
     /*background-image: linear-gradient(to right, blue 0%, white 30%, white 70%, blue 100%);*/
     padding: 1px;
-    margin-left: 40%;
 }
 
-nav ul {
+.Logo_and_nav nav ul {
     display: flex;
+    flex-direction: row;
     gap: 15px;
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-nav ul :hover {
+.Logo_and_nav nav ul :hover {
     box-shadow: 0px 0px 15px 5px aquamarine;
     text-decoration: underline;
 }
 
-nav ul :focus {
+.Logo_and_nav nav ul :focus {
     background-color: #9aa7ad;
 }
 
-nav li {
+.Logo_and_nav nav li {
     list-style: none;
     font-size: 30px;
     border-radius: 25px;
@@ -52,11 +54,25 @@ nav li {
     height: 37px;
 }
 
-nav li a {
+.Logo_and_nav nav li a {
     text-decoration: none;
     border-radius: 25px;
-    display: block;
     color: black;
+    display: block;
+}
+
+.Logo_and_nav .logo_header_group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Logo_and_nav .logo_header_group header {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 85px;
+    align-items: center;
 }
 
 footer {

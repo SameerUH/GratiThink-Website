@@ -23,25 +23,26 @@
             <li>Customizable and accessibility features.</li>
             <li>5 questions to answer for a structured approach.</li>
         </ul>
+
         <br>
         <h3><i><u>Meet the Team:</u></i></h3>
 
         <div class="team">
             <div class="role">
                 <h4>Founder:</h4>
-                <p><b>Sameer Haq</b></p>
+                <p><b>Sameer Haq</b></p><br>
                 <p>Starting and managing the project, Sameer has profound teamwork, leadership and creativity skills to think and add future ideas whilst making sure the customers have a great experience with the app by listening to feedback.</p>
             </div>
 
             <div class="role">
                 <h4>Programmer:</h4>
-                <p><b>Sameer Haq</b></p>
+                <p><b>Sameer Haq</b></p> <br>
                 <p>With years of experience in programming ranging from Python, HTML, CSS, PHP, JavaScript, shown with this very website and with prior projects, Sameer is able to turn a idea into reality through his programming expertise.</p>
             </div>
 
             <div class="role">
                 <h4>Designer:</h4>
-                <p><b>Sameer Haq</b></b></p>
+                <p><b>Sameer Haq</b></b></p> <br>
                 <p>From designing social media posts for societies to apps for programming projects, Sameer can use his creativity skills and an education in Creative I-Media and Art to quickly think of designs to be used in apps. P.S. he designed the app, website and logo all by himself!</p>
             </div>
         </div>

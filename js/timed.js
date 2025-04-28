@@ -4,6 +4,18 @@ window.addEventListener('load', function() {
 
     function timedReviews(fivestars) {
         let i = Math.floor(Math.random() * fivestars.length);
+        
+        if (fivestars[i].review_content == "") {
+            fivestars[i].review_content = "Information not included"
+        }
+
+        if (fivestars[i].user.name == "") {
+            fivestars[i].user.name = "Anonymous"
+        }
+
+        if (fivestars[i].user.location == "") {
+            fivestars[i].user.location = "N/A"
+        }
 
         document.getElementById('timed').innerHTML = '<h2>' + fivestars[i].review_title + '</h2>';
         document.getElementById('timed').innerHTML += '<p>' + fivestars[i].review_content + '</p>';
