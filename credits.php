@@ -4,6 +4,9 @@
     $content = "credits_page";
     echo head_fragment($title, $content);
 ?>
+
+<!--MUST DO THIS PAGE!!!-->
+
 <body>
 
     <?php

@@ -5,6 +5,8 @@
     echo head_fragment($title, $content);
 ?>
 
+<!-- FIGURE OUT AND INCLUDE THE AVERAGE REVIEW RATING BREAKDOWN!!!!! !-->
+
 <body>
     <?php
         include "includes/navbar_fragment.php";
@@ -15,6 +17,8 @@
     <h1>Top Reviews:</h1>
     <div id = "timed"></div>
     <br><br>
+
+    <div id = "average"></div>
 
     <ul id = 'rating'>
         <li id = "All">All</li>

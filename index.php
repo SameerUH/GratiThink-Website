@@ -1,7 +1,9 @@
 <!--
 Short to-do list:
-- Need to add PHP fragments possibly make a template.
-- Need to learn JavaScript to add reviews.
+- Go over mark scheme to see what you're missing!
+- Need to figure out and add the average rating breakdown for the reviews page.
+- Need to add @media to the CSS to make it viewable in different screens.
+- Need to do the credits page.
 !-->
 
 <?php

@@ -22,6 +22,11 @@ window.addEventListener('load', function() {
         displayReviews(reviews);
     })
     
+    function formatDate(raw_date) {
+        let formatted = new Date(raw_date);
+        return formatted.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+    
     function displayReviews(json, stars) {
         if (stars) {
             json = json.filter(function(review) {
@@ -36,7 +41,7 @@ window.addEventListener('load', function() {
             }
 
             if (review.review_content == "") {
-                review.review_content = "Information not included"
+                review.review_content = "Description not included"
             }
 
             if (review.user.name == "") {
@@ -46,7 +51,8 @@ window.addEventListener('load', function() {
             if (review.user.location == "") {
                 review.user.location = "N/A"
             }
-            return '<div class = "box">' + '<h2><u>' + review.review_title + '</u></h2>' + '<p>' + review.review_content + '<p></p>' + numofstars + '</p>' +  '<p>' + review.user.name + ' | ' + review.user.location + ' | ' + review.date + '</p>' + '</div>';
+
+            return '<div class = "box">' + '<h2><u>' + review.review_title + '</u></h2>' + '<p>' + review.review_content + '<p></p>' + numofstars + '</p>' +  '<p>' + review.user.name + ' | ' + review.user.location + ' | ' + formatDate(review.date) + '</p>' + '</div>';
         });
 
         document.getElementById('reviews').innerHTML = reviews.join('');

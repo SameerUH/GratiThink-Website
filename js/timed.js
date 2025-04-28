@@ -1,12 +1,16 @@
 window.addEventListener('load', function() {
     "use strict";
 
+    function formatDate(raw_date) {
+        let formatted = new Date(raw_date);
+        return formatted.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
 
     function timedReviews(fivestars) {
         let i = Math.floor(Math.random() * fivestars.length);
         
         if (fivestars[i].review_content == "") {
-            fivestars[i].review_content = "Information not included"
+            fivestars[i].review_content = "Description not included"
         }
 
         if (fivestars[i].user.name == "") {
@@ -20,6 +24,7 @@ window.addEventListener('load', function() {
         document.getElementById('timed').innerHTML = '<h2>' + fivestars[i].review_title + '</h2>';
         document.getElementById('timed').innerHTML += '<p>' + fivestars[i].review_content + '</p>';
         document.getElementById('timed').innerHTML += '<p> ⭐⭐⭐⭐⭐</p>';
+        document.getElementById('timed').innerHTML += '<p>' + fivestars[i].user.name + ' | ' + fivestars[i].user.location + ' | ' + formatDate(fivestars[i].date) + '</p>';
     }
 
     const URL = 'data/reviews.json';
