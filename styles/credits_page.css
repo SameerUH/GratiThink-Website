@@ -75,9 +75,55 @@ body {
     align-items: center;
 }
 
+h2 {
+    font-size: 35px;
+}
+
+.box {
+    border-style: solid;
+    border-color: #004d40;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
 footer {
     background-color: #004d40	;
     padding: 20px;
     color: white;
     font-size: large;
+}
+
+@media screen and (max-width: 700px) {
+    .Logo_and_nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Logo_and_nav nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    header {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .Logo_and_nav .logo_header_group {
+        flex-direction: column;
+    }
 }

@@ -19,6 +19,7 @@
     <br><br>
 
     <div id = "average"></div>
+    <br><br>
 
     <ul id = 'rating'>
         <li id = "All">All</li>
@@ -37,6 +38,7 @@
 
     <script src="js/reviews.js"></script>
     <script src="js/timed.js"></script>
+    <script src="js/average.js"></script>
 
     <?php
         include "includes/footer_fragment.php";

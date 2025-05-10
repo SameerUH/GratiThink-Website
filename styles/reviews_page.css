@@ -143,3 +143,54 @@ footer {
     border-image: linear-gradient(to bottom, darkslategray 0%, darkcyan 100%) 1;
     font-size: 20px;
 }
+
+#average {
+    border-style: solid;
+    border-radius: 15px;
+    border-color:#004d40;
+    background-color: white;
+    width: 400px;
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    .Logo_and_nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Logo_and_nav nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    header {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    #timed {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .Logo_and_nav .logo_header_group {
+        flex-direction: column;
+    }
+
+    #timed {
+        width: 200px;
+    }
+}

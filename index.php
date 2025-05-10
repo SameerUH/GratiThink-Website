@@ -1,9 +1,10 @@
 <!--
 Short to-do list:
-- Go over mark scheme to see what you're missing!
-- Need to figure out and add the average rating breakdown for the reviews page.
-- Need to add @media to the CSS to make it viewable in different screens.
-- Need to do the credits page.
+- Go over mark scheme to see what you're missing! -----
+- Need to figure out and add the average rating breakdown for the reviews page ----.
+- Need to add @media to the CSS to make it viewable in different screens. ----
+- Need to do the credits page. ------
+- Add error pages. ---------
 !-->
 
 <?php
